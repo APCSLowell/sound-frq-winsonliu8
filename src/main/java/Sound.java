@@ -22,7 +22,7 @@ public class Sound
         samples[i] = limit; 
         numChanges++; 
       }
-      else if (samples[i] = -limit){
+      else if (samples[i] < -limit){
         samples[i]= -limit; 
         numchanges++; 
       }
@@ -40,10 +40,13 @@ public class Sound
   public void trimSilenceFromBeginning()
   {
     /* to be implemented in part (b) */
-    int i = 0; 
-    while (myList.get(i) == 0){
-      myList.remove(i);
-      i--; 
+    int zeros = 0; 
+    while (samples[zeros] = 0)
+      zeros++; 
+    int [] arr = new int [samples.length-zeros]; 
+    for (int i = 0; i < arr.length; i++){
+      arr [i] = samples [i + zeros]; 
     }
+    samples = arr; 
   }
 }
