@@ -24,7 +24,7 @@ public class Sound
       }
       else if (samples[i] < -limit){
         samples[i]= -limit; 
-        numchanges++; 
+        numChanges++; 
       }
     }
     return numChanges; 
@@ -41,7 +41,7 @@ public class Sound
   {
     /* to be implemented in part (b) */
     int zeros = 0; 
-    while (samples[zeros] = 0)
+    while (samples[zeros] == 0)
       zeros++; 
     int [] arr = new int [samples.length-zeros]; 
     for (int i = 0; i < arr.length; i++){
